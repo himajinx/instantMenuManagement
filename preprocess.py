@@ -1,3 +1,4 @@
+#画像からリストを作成。この後はメニュー表(画像込み)を自動作成する必要がある。
 import os
 import pandas as pd
 import argparse
