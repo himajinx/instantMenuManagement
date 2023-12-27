@@ -1,5 +1,8 @@
 <?php
-$file = 'table12.csv'; // CSVファイル名を設定。tables.csv={tableid:{{foodname,foodquantity}}}に書き換える必要がありそう
+<?php
+if (htmlspecialchars($_COOKIE["auth_cookie"])=="908f0860dcee6818451c9d5ed37058f25c93ecba") {
+ 	// code...
+ $file = 'table12.csv'; // CSVファイル名を設定。tables.csv={tableid:{{foodname,foodquantity}}}に書き換える必要がありそう
 $data = [];
 
 if (($handle = fopen($file, "r")) !== FALSE) {
@@ -31,4 +34,7 @@ if (($handle = fopen($file, "r")) !== FALSE) {
       <?php endforeach; ?>
    </div>
 </body>
+ } 
+
+
 </html>
